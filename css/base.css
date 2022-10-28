@@ -1,0 +1,56 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ChosunBg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunBg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('http://fonts.cdnfonts.com/css/fugaz-one');   /* font-family: 'Fugaz One', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+h3 {
+    line-height: 1em;
+    font-family: 'Fugaz One', sans-serif;
+}
+
+body {
+    font-family: 'pretendard';
+}
+
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}

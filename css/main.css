@@ -1,0 +1,760 @@
+body {
+    cursor: url(../img/cursor.cur),auto;
+}
+
+a:hover {
+    cursor: url(../img/cursor_potint.cur),auto;
+}
+
+a, a:link {
+    cursor: url(../img/cursor_potint.cur),auto;
+}
+
+a:active {
+    cursor: url(../img/cursor_potint.cur),auto;
+}
+
+p {
+    cursor: url(../img/text.cur),auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    cursor: url(../img/text.cur),auto;
+}
+
+/* ---------------------------------마우스 커서 설정------------------------------------ */
+
+#wrap>section {
+    height: 100vh;
+}
+
+h3 {
+    text-align: center;
+    font-size: 85px;
+    color: #f1efef;
+    text-shadow: 8px 6px 0 #292828, 2px 0 0 #333333, 0 2px 0 #333333, -2px 0 0 #333333, 0 -2px 0 #333333;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+#header {
+    background-color: #f1efef;
+    position: relative;
+}
+
+.headerin {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 123px;
+    color: #f1efef;
+    text-shadow: 8px 6px 0 #403d3d, 2px 0 0 #000, 0 2px 0 #000, -2px 0 0 #000, 0 -2px 0 #000;
+    font-weight: 800;
+    position: relative;
+}
+
+.logo::after {
+    content: '';
+    width: 710px;
+    height: 72px;
+    display: inline-block;
+    background-color: #fef670;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.gnb {
+    display: flex;
+    justify-content: space-between
+    
+}
+
+.gnb li {
+    margin-left: 50px;
+}
+
+.gnb li:hover a {
+    text-decoration: underline;
+}
+
+.gnb li a {
+    font-family: 'Fugaz One', sans-serif;
+    font-size: 23px;
+    position: relative;
+}
+
+.gnb li a::before {
+    content: '';
+    display: inline-block;
+    width: 49px;
+    height: 35px;
+    background: url(../img/icon_folder.png) no-repeat 0 0;
+    position: absolute;
+    top: -7px;
+    left: -50px;
+}
+
+.gnb li a::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 20px;
+    background-color: #fef670;
+    position: absolute;
+    top: 7px;
+    left: -17px;
+    z-index: -10;
+}
+
+.gnb li:nth-child(1) a::after {
+    width: 120px;
+}
+
+.gnb li:nth-child(2) a::after {
+    width: 110px;
+}
+
+.gnb li:nth-child(3) a::after {
+    width: 90px;
+}
+
+.gnb li:nth-child(4) a::after {
+    width: 130px;
+}
+
+.mouse {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    animation-name: mouse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes mouse {
+    0%{
+        bottom: 40px;
+    }
+    50%{
+        bottom: 50px;
+    }
+    100%{
+        bottom: 40px;
+    }
+}
+
+
+/* ----------------------------------- #header 끝 ----------------------------------- */
+
+#profile {
+    background-color: #fef670;
+}
+
+#profile h3 {
+    padding-top: 60px;
+    color: #fef670;
+    position: relative;
+}
+
+#profile h3::before {
+    content: '';
+    display: inline-block;
+    width: 750px;
+    height: 1px;
+    background-color: #333333;
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+
+#profile h3::after {
+    content: '';
+    display: inline-block;
+    width: 750px;
+    height: 1px;
+    background-color: #333333;
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+.pro_in {
+    width: 1200px;
+    height: 100%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.pro_in .left .intro{
+    margin: 15px 30px 0 0;
+    line-height: 2.1em;
+    text-align: end;
+    color: #333333;
+}
+
+.pro_in .left .intro .name {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+}
+
+.pro_in .left .intro .name span {
+    font-size: 28px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.pro_in .middle div{
+    margin-bottom: 60px;
+}
+
+.pro_in .middle div p{
+    color: #333333;
+}
+
+.pro_in .middle div h4{
+    font-size: 23px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.pro_in .middle .license p {
+    line-height: 2em;
+}
+
+.pro_in .middle .tool img {
+    margin-right: 15px;
+}
+
+.pro_in .right h4 {
+    font-size: 23px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.pro_in .right .exper li {
+    margin-bottom: 16px;
+}
+
+.pro_in .right .exper li p {
+    color: #333333;
+    line-height: 1.5em;
+}
+
+.pro_in .right .exper li .company span {
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+/* ----------------------------------- #profile 끝----------------------------------- */
+
+#design1 {
+    background: #f1efef url(../img/bg_purple01.png) no-repeat center bottom / cover;
+}
+
+#design1 h3 {
+    padding-top: 60px;
+    position: relative;
+}
+
+#design1 h3::before {
+    content: '';
+    display: inline-block;
+    width: 750px;
+    height: 1px;
+    background-color: #333333;
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+
+#design1 h3::after {
+    content: '';
+    display: inline-block;
+    width: 750px;
+    height: 1px;
+    background-color: #333333;
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+.web {
+    width: 1200px;
+    height: 100%;
+    margin: 50px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.web .box>p {
+    text-align: right;
+}
+
+.web .box .sub{
+    margin-bottom: 60px;
+    color: #666666;
+    font-size: 20px;
+    font-weight: 200;
+    
+}
+
+.web .box .tit {
+    margin-bottom: 20px;
+    color: #4d3d6c;
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 1em;
+    margin-bottom: 25px;
+}
+
+.web .box .tit span {
+    font-size: 120px;
+}
+
+.web .box .line {
+    width: 302px;
+    height: 1px;
+    background-color: #878689;
+    margin-bottom: 25px;
+}
+
+.web .box .txt {
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+.web .box .button {
+    margin: 60px 0 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.web .box .button div{
+    width: 135px;
+    height: 40px;
+    background-color: #4d3d6c;
+    border-radius: 10px;
+    transition: all 0.6s;
+}
+
+.web .box .button div a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.web .box .button div:hover {
+    background-color: #fff;
+}
+
+.web .box .button div:hover a {
+    color: #4d3d6c;
+}
+
+.guide {
+    display: flex;
+    justify-content: space-between;
+}
+
+.guide .sqr {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #4d3d6c;
+    position: relative;
+}
+
+.guide .sqr .s_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.guide .sqr .s_box p {
+    color: #ffffff;
+}
+
+.guide .sqr .s_box .s_tit{
+    white-space : nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.guide .sqr .s_box .s_txt {
+    white-space : nowrap;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+
+
+/* ----------------------------------- #design1 끝----------------------------------- */
+
+#design2 {
+    background: #f1efef url(../img/bg_purple02.png) no-repeat center top / cover;
+    position: relative;
+}
+
+.deIn {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.benner {
+    display: flex;
+    flex-wrap:wrap; 
+}
+
+.benner li div {
+    width: 392px;
+    height: 382px;
+    overflow: hidden;
+    position: relative;
+}
+
+.benner li:nth-child(1) div {
+    margin: 80px 6px 0 0;
+    border-top-left-radius: 20px;
+}
+
+.benner li:nth-child(2) div {
+    width: 291px;
+    margin: 80px 6px 0 0;
+}
+
+.benner li:nth-child(3) div {
+    margin-top: 80px;
+    width: 291px;
+}
+
+.benner li:nth-child(4) div {
+    width: 588px;
+    margin: 10px 6px 0 0;
+    border-bottom-left-radius: 20px;
+}
+
+.benner li:nth-child(5) div {
+    width: 392px;
+    margin: 10px 6px 0 0;
+}
+
+.benner li:nth-child(6) div {
+    position: absolute;
+    top: 80px;
+    width: 190px;
+    height: 774px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.benner li div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+}
+
+.benner li:nth-child(6) div img{
+    width: auto;
+    height: 100%;
+}
+
+.benner li div p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'S-CoreDream-3Light';
+    text-align: center;
+    line-height: 332px;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.4s;
+    z-index: 1;
+    cursor: url(../img/cursor_potint.cur),auto;
+}
+
+
+.benner li div p::after {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../img/right_arrow.png) no-repeat 0 0;
+    position: absolute;
+    bottom: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.benner li:last-child div p {
+    font-size: 16px;
+    line-height: 704px;
+}
+
+.benner li:last-child div p::after {
+    bottom: 350px;
+}
+
+.benner li:hover div p {
+    opacity: 0.8;
+}
+
+
+#popup>div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 10;
+}
+
+#popup>div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: auto;
+    height: 850px;
+}
+
+/* ----------------------------------- #design2 끝----------------------------------- */
+
+#video {
+    background-color: #f1efef;
+}
+
+#video h3 {
+    padding-top: 60px;
+    position: relative;
+}
+
+#video h3::before {
+    content: '';
+    display: inline-block;
+    width: 750px;
+    height: 1px;
+    background-color: #333333;
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+
+#video h3::after {
+    content: '';
+    display: inline-block;
+    width: 750px;
+    height: 1px;
+    background-color: #333333;
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+.video_in {
+    width: 1200px;
+    height: 100%;
+    margin: 50px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video_in .list {
+    width: 200px;
+    height: 207px;
+}
+
+.video_in .list .tab {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.video_in .list .tab li {
+    margin-bottom: 60px;
+}
+
+.video_in .list .tab li a{
+    font-family: 'ChosunBg';
+    font-size: 30px;
+    color: #333333;
+    position: relative;
+    z-index: 100;
+}
+
+.video_in .list .tab li a::before {
+    content: '';
+    display: inline-block;
+    width: 49px;
+    height: 35px;
+    background: url(../img/icon_folder.png) no-repeat 0 0;
+    position: absolute;
+    bottom: 2px;
+    left: -55px;
+}
+
+.video_in .list .tab li a::after {
+    content: '';
+    width: 110px;
+    height: 25px;
+    background-color: #fef670;
+    position: absolute;
+    top: 3px;
+    left: -15px;
+    z-index: -1;
+}
+
+.video_in .list .tab .on {
+    font-style: italic;
+    text-decoration: underline;
+    text-underline-position : under;
+}
+
+.video_in .cont>div {
+    display: none;
+}
+
+.video_in .cont>div:first-child {
+    display: block;
+}
+
+.video_in .cont>div .youtube {
+    width: 900px;
+    height: 507px;
+}
+
+.video_in .cont>div .youtube iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.video_in .cont>div .txt {
+    width: 900px;
+}
+
+.video_in .cont>div .txt h2 {
+    margin-top: 30px;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333333;
+}
+.video_in .cont>div .txt .line {
+    width: 900px;
+    height: 1px;
+    border-top: 1px solid #999999;
+}
+
+.video_in .cont>div .txt p {
+    margin-top: 10px;
+    color: #333333;
+}
+
+/* ----------------------------------- #video 끝----------------------------------- */
+
+#contact {
+    background-color: #f1efef;
+}
+
+.cont_in {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cont_logo {
+    text-align: center;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cont_logo h2{
+    font-size: 123px;
+    color: #f1efef;
+    text-shadow: 8px 6px 0 #403d3d, 2px 0 0 #000, 0 2px 0 #000, -2px 0 0 #000, 0 -2px 0 #000;
+    font-weight: 800;
+    white-space : nowrap;
+    /* margin-bottom: 10px; */
+}
+
+.cont_logo h2::after {
+    content: '';
+    width: 820px;
+    height: 72px;
+    display: inline-block;
+    background-color: #fef670;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.cont_logo .tel {
+    margin-top: 20px;
+    color: #555555;
+}
+
+.cont_logo .tel span::after {
+    content: '';
+    display: inline-block;
+    width: 630px;
+    height: 1px;
+    background-color: #555555;
+    margin: 0 10px 0 10px;
+    transform: translateY(-4px);
+
+}
+
+.caution {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px;
+    color: #666666;
+    font-size: 15px;
+    white-space : nowrap;
+}
+
+/* ----------------------------------- #contact 끝----------------------------------- */
